@@ -19,7 +19,7 @@ body {
   
   .pokedex {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
     grid-gap: 20px;
     padding-inline-start: 0;
   }
@@ -147,6 +147,20 @@ body {
     padding: 5px 10px;
     border-radius: 10px;
     z-index: 2;
+  }
+
+  #searchbar{
+    margin-left: 35%;
+    margin-top: 20px;
+    padding:15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
   }
   
   @keyframes bounce {
