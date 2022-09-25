@@ -20,9 +20,15 @@ const generateHTML = pokemons => {
 
     accumulator += `
       <li class="card ${elementTypes[0]}">
-      <img class="card-image alt="${name}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${id}.png"</img>
-        <h2 class="card-title">${name}</h2>
-        <h4 class="pokemon-id">#${pokemonId}</h4>
+		<div>
+			<div class="container-pokemon-id">
+				<h4 class="pokemon-id ${elementTypes[0]}">#${pokemonId}</h4>
+			</div>
+			<img class="card-image alt="${name}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png"</img>
+		</div>
+		<div class="container-name ${elementTypes[0]}">
+			<h2 class="card-title">${name}</h2>
+		</div>
       </li>
     `
     return accumulator

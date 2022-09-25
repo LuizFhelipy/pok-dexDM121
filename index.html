@@ -11,11 +11,15 @@
 
 <body>
     <div class="container">
-        <h1>Pokédex</h1>
-		<div class="action-bar">
-			<input id="searchbar" type="text" name="search" placeholder="Procurar">
+		<div class="header">
+		    <img class="logo" src="./img/logo_pokeball.png"/>
+			<h1>Pokédex</h1>
 			<span id="sortAlpha" class="sort"><i class="fa-solid fa-arrow-up-z-a"></i></span>
 			<span id="sortId" class="sort"><i class="fa-solid fa-arrow-up-1-9"></i></span>
+		</div>
+		<div class="action-bar">
+		    <i class="icon fa-solid fa-magnifying-glass"></i>
+			<input id="searchbar" type="text" name="search" placeholder="Search">
 		</div>
         <ul data-js="pokedex" class="pokedex"></ul>
     </div>
