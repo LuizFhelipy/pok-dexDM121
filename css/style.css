@@ -189,7 +189,7 @@ body {
     background-color: var(--color-poke-type-dragon);
   }
   .card.dragon {
-	  order: 2px solid var(--color-poke-type-dragon);    
+	  border: 2px solid var(--color-poke-type-dragon);    
   }
   
   .psychic {
